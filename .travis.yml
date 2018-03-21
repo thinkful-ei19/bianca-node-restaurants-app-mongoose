@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: uX/jQLK3UxfiPRUWBswV/ZvsYQfQ9WRS7o4thudRpgUzGCMOu6YA3SUqMhV7zY22M3nHDYgvp7wOZWGTM4XD5qNrApX+Uou4LZyVsiVrk9KKr4czYCNa3ZEz2DseueMScYoojR7MJ98pbRTDh6WwQeqeN33FK5E/HB6OiPyLw9Idvz8Gu9SaAMJEtBKBmQotqV3ZvT4hR3NWJz2Ge/xCQrtU++3jRFpN+D5Qm8slEdODLsHyl4mMaDbc8VNAO95qzoQizi2GAyx33cULnAgdc5YyQou2yQcywX9KDplcQO/AeNjdQJUOZTPGoBKKdKdI8QEhvpQQlRQzRSuv2Gl12uAaEVYaYnUZOxNvFoTkzJJBNbph/wRGCmYxo2wSCg7WVK/RYm4FeFar1xsSxzlx5OIugiaw1SDSP+YHdBqBG3qre+sjdyG+s2vvE7nC/KnUuJ8YlwERDtdkAs+vMfsG3t57NEz48wLB9HO1C17B0y1yTJI+ub3nlrFoW6BjXG1SlIsiME9Z+0+2XEDHTdhu5ftFWIRtqctGtP3AYmX5TgpkGmogLoYtBRUgr8AICA0nL/01+P9F5II6hcamz9nL3zph0WPK9Mdm+pVxdNXuoJ/0/pYZDN9w2vDIgeRzvwoXguch4ozzkGxBIS5dKO39h57x+sKY7tj7/vpqrkgQFkQ=
+  app: powerful-badlands-63716
+  on:
+    repo: thinkful-ei19/bianca-node-restaurants-app-mongoose
+    branch: feature/with-tests
